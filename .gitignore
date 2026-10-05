@@ -1,31 +1,37 @@
-# Go build artifacts
-/bin/
-*.exe
-*.dll
-*.so
-*.dylib
-*.test
-*.out
-vendor/
+# Dependencies
+node_modules/
 
-# Go test coverage and profiling
-coverage.out
-*.prof
+# Package manager files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Environment files
+# Build output and coverage
+dist/
+build/
+coverage/
+.nyc_output/
+
+# Environment and local configuration
 .env
 .env.*
 !.env.example
 
-# IDE and operating system files
-.idea/
-.vscode/
+# Logs
+logs/
+*.log
+
+# Tool caches
+.cache/
+.eslintcache
+.parcel-cache/
+.next/
+.nuxt/
+.turbo/
+
+# OS and editor files
 .DS_Store
 Thumbs.db
-
-# Logs and temporary files
-*.log
-*.tmp
-tmp/
-
-goBoilerplate
+.idea/
+.vscode/
